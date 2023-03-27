@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slim Menu Bar Sticky</title>
+  <link href="fonts/bootstrapicon/font/bootstrap-icons.css" type="text/css" rel="stylesheet">
+  <link href="css/slimmenu.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <!-- top header -->
+    <div class="top_header">
+      <div class="container">
+        <div class="top_nav_wrapper">
+          <!-- top contact info -->
+          <div class="top_contact_info">
+            <div><a href="#"><i class="bi bi-envelope-fill"></i>info@gmail.com</a></div>
+            <div><a href="#"><i class="bi bi-telephone-fill"></i>(+977) 9841-000111</a></div>
+          </div>
+          <!-- social media icon -->
+          <div class="social_icon">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sticky navbar -->
+    <div class="main_menu">
+      <div class="sticky_header">
+        <div class="container">
+          <div class="menu_wrapper">
+            <div class="header_left">
+              <figure>
+                <a href="#">
+                  <img src="images/1.jpg" alt="logo_image_here">
+                </a>
+              </figure>
+            </div>
+            <div class="header_right">
+              <nav>
+                <ul class="slimmenu">
+                  <li><a href="#">Link1</a></li>
+                  <li><a href="#">Link2</a></li>
+                  <li> <a href="#">Link3 drop down</a>
+                    <ul>
+                      <li><a href="#">Link3.1</a></li>
+                      <li> <a href="#">Link3.2</a>
+                        <ul>
+                          <li><a href="#">Link3.2.1</a></li>
+                          <li>
+                            <a href="#">Link3.2.2</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Link4</a></li>
+                  <li><a href="#">Link5</a></li>
+                  <li><a href="#">Link6</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.slimmenu.min.js"></script>
+  <script src="js/slimmenu.js"></script>
+  <script>
+    $('.slimmenu').slimmenu({
+      resizeWidth: '768',
+      collapserTitle: '',
+      animSpeed: 'medium',
+      indentChildren: true,
+      childrenIndenter: '&raquo;'
+    });
+  </script>
+</body>
+
+</html>
